@@ -1,0 +1,96 @@
+/* project.css */
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #121212; /* Ensure text is black */
+}
+
+.techStack {
+  display: flex;
+  margin-right: 1px;
+  /* Ensure badges wrap to the next line */
+}
+
+.techStack .tech-badge {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-success {
+  background-color: #28a745;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-size: 1.3em;
+  }
+
+  .card-text {
+    font-size: 1em;
+  }
+
+  .techStack .tech-badge {
+    font-size: 0.8em;
+  }
+}

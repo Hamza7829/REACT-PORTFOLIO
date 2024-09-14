@@ -1,0 +1,68 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+/* Footer social icons */
+.footer .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #0073b1; /* LinkedIn color */
+}
+
+/* Footer text (copyright or other text) */
+.footer p {
+  margin: 0;
+  text-align: center;
+  flex: 1; /* Allow the text to occupy full width on smaller screens */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 13px;
+  }
+
+  .footer .container {
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center; /* Center icons on smaller screens */
+    margin-top: 10px; /* Add some space between text and icons */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .footer .social-icons {
+    gap: 8px; /* Reduce gap between icons on very small screens */
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}

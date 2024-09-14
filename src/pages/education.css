@@ -1,0 +1,74 @@
+/* EducationTable.css */
+
+.table-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Default heading size */
+}
+
+.custom-table {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 14px;
+  border-collapse: collapse; /* Ensure borders do not double */
+}
+
+.custom-table th, .custom-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+  word-break: break-word; /* Ensure long words break to prevent overflow */
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .custom-table {
+    font-size: 13px; /* Adjust font size for tablets */
+  }
+  
+  .custom-table th, .custom-table td {
+    padding: 10px 12px; /* Adjust padding for tablets */
+  }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+  .custom-table {
+    font-size: 12px; /* Further reduce font size for mobile devices */
+  }
+  
+  .custom-table th, .custom-table td {
+    padding: 8px 10px; /* Further reduce padding for mobile devices */
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .custom-table {
+    font-size: 10px; /* Further reduce font size for extra small screens */
+  }
+  
+  .custom-table th, .custom-table td {
+    padding: 6px 8px; /* Further reduce padding for extra small screens */
+  }
+  
+  .table-heading {
+    font-size: 1.2em; /* Adjust heading font size for extra small screens */
+    margin-bottom: 15px; /* Adjust margin for heading */
+  }
+
+  /* Ensure table fits within the viewport */
+  .custom-table {
+    overflow-x: auto; /* Allow horizontal scroll on small screens */
+    display: block;
+  }
+}

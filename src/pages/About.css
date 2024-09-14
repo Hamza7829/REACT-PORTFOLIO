@@ -1,0 +1,81 @@
+/* About.css */
+
+/* Default styles */
+.about-container {
+  padding: 50px 15px;
+  border: 2px solid #ddd; /* Add border to the entire container */
+  border-radius: 10px; /* Add border radius to the container */
+}
+
+.about-image {
+  width: 100%;
+  max-width: 300px; /* Adjust the max width to fit better with the paragraph */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 2px solid #ccc; /* Add border to the image */
+  margin: auto; /* Center the image within its column */
+}
+
+.about-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333; /* Default text color for light theme */
+  text-align: justify;
+  padding-left: 15px; /* Adds some space between the image and text */
+}
+
+/* Responsive for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 30px 15px; /* Adjust padding for tablets */
+  }
+  
+  .about-image {
+    max-width: 250px; /* Adjust max width for tablets */
+  }
+  
+  .about-text {
+    font-size: 1em; /* Adjust font size for tablets */
+    padding-left: 10px; /* Reduce left padding for tablets */
+  }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px 10px; /* Adjust padding for mobile devices */
+  }
+  
+  .about-image {
+    max-width: 200px; /* Adjusted max width for smaller screens */
+    margin-bottom: 20px; /* Add margin below the image */
+  }
+  
+  .about-text {
+    font-size: 0.9em; /* Reduce font size for mobile devices */
+    padding-left: 0; /* Removes left padding on smaller screens */
+    text-align: center; /* Centers the text on smaller screens */
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 15px 5px; /* Further reduce padding for extra small screens */
+  }
+  
+  .about-image {
+    max-width: 150px; /* Further reduce max width for extra small screens */
+  }
+  
+  .about-text {
+    font-size: 0.8em; /* Further reduce font size for extra small screens */
+    padding-left: 0; /* Keep left padding removed */
+  }
+}
+
+/* Dark theme styles */
+.dark-theme .about-text {
+  color: #fff; /* Text color for dark theme */
+}

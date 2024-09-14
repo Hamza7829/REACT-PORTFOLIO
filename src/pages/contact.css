@@ -1,0 +1,132 @@
+/* Contact.css */
+
+/* Default styles */
+.container {
+  padding: 20px;
+}
+
+.contact-form {
+  text-align: center;
+  border: 1px solid #ddd; /* Add border to the contact form */
+  padding: 20px;
+  border-radius: 8px; /* Add border radius to the contact form */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #000;
+}
+
+.social-icons a:hover {
+  color: #f8f9f9; /* LinkedIn color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Add border radius to the button */
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+.dark-mode .btn-dark {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.row.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .container {
+      padding: 15px; /* Adjust padding for tablets */
+  }
+  
+  .contact-form {
+      padding: 15px; /* Reduce padding for tablets */
+  }
+  
+  .social-icons {
+      gap: 10px; /* Reduce gap between social icons for tablets */
+  }
+  
+  .form-group {
+      margin-bottom: 10px; /* Reduce margin for form groups on tablets */
+  }
+  
+  .btn-dark {
+      font-size: 16px; /* Adjust button font size for tablets */
+  }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Further reduce padding for mobile devices */
+  }
+  
+  .contact-form {
+      padding: 10px; /* Further reduce padding for mobile devices */
+  }
+  
+  .social-icons {
+      flex-direction: column; /* Stack social icons vertically on mobile devices */
+      gap: 10px; /* Adjust gap for stacked icons */
+      margin-bottom: 20px; /* Add margin below social icons */
+  }
+  
+  .form-group {
+      margin-bottom: 10px; /* Reduce margin for form groups on mobile devices */
+  }
+  
+  .btn-dark {
+      font-size: 14px; /* Reduce button font size for mobile devices */
+      padding: 10px 15px; /* Adjust padding for buttons */
+  }
+  
+  .contact-image {
+      width: 100%; /* Ensure the image fits within the container on mobile devices */
+      height: auto; /* Maintain aspect ratio on mobile devices */
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .container {
+      padding: 5px; /* Minimal padding for extra small screens */
+  }
+  
+  .contact-form {
+      padding: 5px; /* Minimal padding for extra small screens */
+  }
+  
+  .social-icons {
+      gap: 5px; /* Reduce gap between social icons for extra small screens */
+  }
+  
+  .btn-dark {
+      font-size: 12px; /* Further reduce button font size for extra small screens */
+      padding: 8px 12px; /* Adjust padding for buttons */
+  }
+}
